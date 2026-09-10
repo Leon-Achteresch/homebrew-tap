@@ -26,8 +26,7 @@ cask "l8db" do
   version "0.4.1"
   sha256 "96bff31fea5b60569236aa348053385cbc5092ac6a875eb7f07fc77e97f55749"
 
-  url "https://github.com/Leon-Achteresch/l8db/releases/download/v#{version}/l8db_#{version}_universal.dmg",
-      verified: "github.com/Leon-Achteresch/l8db/"
+  url "https://github.com/Leon-Achteresch/l8db/releases/download/v#{version}/l8db_#{version}_universal.dmg"
   name "l8db"
   desc "Fast, native desktop client for PostgreSQL and other databases"
   homepage "https://github.com/Leon-Achteresch/l8db"
@@ -41,7 +40,7 @@ cask "l8db" do
   # aktualisiert sich also selbst. Deshalb meldet brew sie nicht als "outdated".
   auto_updates true
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "l8db.app"
 
